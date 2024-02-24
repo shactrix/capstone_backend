@@ -1,3 +1,3 @@
 module.exports = {
-    postCtrl: require('./postCtrls'),
+    postControllers: require('./postControllers'),
 }

@@ -7,7 +7,6 @@ const cors = require('cors');
 const bodyParser = require("body-parser");
 
 const posts = require('./routes/posts')
-const user = require('./routes/user')
 
 // MiddleWare
 app.use(
@@ -32,7 +31,6 @@ app.use(express.json());
 
 // Routes
 app.use('/', posts); 
-app.use("/user", user);
 
 app.get('/', (req, res) => {
     res.send('Backend / Route');
